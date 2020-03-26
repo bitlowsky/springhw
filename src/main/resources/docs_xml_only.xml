@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans  xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:context="http://www.springframework.org/schema/context"
+        xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <bean id="passport" class="docs.beans.Passport">
+        <constructor-arg name="name" value="Passport"/>
+        <property name="s" value="1234"/>  
+        <property name="num" value="9999999"/>  
+    </bean>
+
+    <bean id="note" class="docs.beans.Note">
+        <constructor-arg name="name" value="Note"/>
+        <property name="themeName" value="Shopping"/>  
+    </bean>
+
+    <bean id="printer" class="docs.beans.Printer"></bean>
+
+</beans>
